@@ -2,6 +2,8 @@
 import Vue from 'vue'
 // 引入 App.vue 的默认值
 import App from './App'
+import router from './router'
+import './directives'
 
 // 设置 false 以阻止 Vue 在启动时生成生产提示
 Vue.config.productionTip = false;
@@ -10,6 +12,7 @@ Vue.config.productionTip = false;
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  router,
   components: { App },
   template: '<App/>'
 });
